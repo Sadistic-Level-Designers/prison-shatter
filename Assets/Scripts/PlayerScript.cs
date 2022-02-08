@@ -1,4 +1,4 @@
- using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,7 +7,6 @@ public class PlayerScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
 
@@ -15,25 +14,31 @@ public class PlayerScript : MonoBehaviour
      *  Movement
      */
     public float walkSpeed;
-    Vector2Int _targetPos;
+    public float stepSize = 1f;
+    Vector2 movement;
 
 
     // Update is called once per frame
     void Update()
     {
-        Vector2 input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-        Debug.Log(input);
-
-        if(input.sqrMagnitude > 0f) {
-            Vector2Int currentPos = new Vector2Int(Mathf.FloorToInt(transform.position.x), Mathf.FloorToInt(transform.position.y));
-
-            _targetPos.x = currentPos.x + Mathf.CeilToInt(input.x);
-            _targetPos.y = currentPos.y + Mathf.CeilToInt(input.y);
-        }
+        movement = GetMovement().normalized;
     }
 
     void FixedUpdate() {
-        Vector3 target = new Vector3(_targetPos.x, _targetPos.y, 0f);
-        transform.position = Vector3.MoveTowards(transform.position, target, walkSpeed * Time.fixedDeltaTime);
+        transform.position += new Vector3(movement.x, movement.y, 0f) * walkSpeed * Time.fixedDeltaTime;
+    }
+
+    protected Vector2 GetMovement() {
+        Vector2 mov;
+
+        bool d = Input.GetKey(KeyCode.DownArrow);
+        bool u = Input.GetKey(KeyCode.UpArrow);
+        bool l = Input.GetKey(KeyCode.LeftArrow);
+        bool r = Input.GetKey(KeyCode.RightArrow);
+
+        mov.x = (l && r ? 0 : (l ? -1 : (r ? 1 : 0)));
+        mov.y = (d && u ? 0 : (d ? -1 : (u ? 1 : 0)));
+
+        return mov;
     }
 }
