@@ -10,16 +10,16 @@ public class PlayerScript : MonoBehaviour
     }
 
     /*
-     * 
+     * Sprites
      */
     public Sprite[] walkLeft;
     public Sprite[] walkRight;
     public Sprite[] walkUp;
     public Sprite[] walkDown;
 
-    protected SpriteRenderer renderer;
+    public SpriteRenderer renderer;
     protected Sprite[] spriteSheet;
-    protected int spriteIndex;
+    public float spriteIndex;
 
     /*
      *  Movement
@@ -33,6 +33,7 @@ public class PlayerScript : MonoBehaviour
     void Update()
     {
         movement = GetMovement().normalized;
+        UpdateSprites(movement);
     }
 
     void FixedUpdate() {
@@ -51,5 +52,20 @@ public class PlayerScript : MonoBehaviour
         mov.y = (d && u ? 0 : (d ? -1 : (u ? 1 : 0)));
 
         return mov;
+    }
+
+    protected void UpdateSprites(Vector2 mov) {
+                if(mov.y > 0) spriteSheet = walkUp;
+        else    if(mov.y < 0) spriteSheet = walkDown;
+        else    if(mov.x > 0) spriteSheet = walkRight;
+        else    if(mov.x < 0) spriteSheet = walkLeft;
+
+        if(mov.sqrMagnitude > 0) {
+            spriteIndex = (spriteIndex + (spriteSheet.Length * Time.deltaTime)) % spriteSheet.Length;
+        } else {
+            spriteIndex = 0;
+        }
+
+        this.renderer.sprite = spriteSheet[Mathf.FloorToInt(spriteIndex)];
     }
 }
