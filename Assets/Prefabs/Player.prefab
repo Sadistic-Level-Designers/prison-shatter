@@ -145,7 +145,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5cda3af3186d47f89dbb4116ffd9f16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  walkLeft:
+  - {fileID: 1840663188, guid: ba8dcc840b38f654181c8ed01ce52d3b, type: 3}
+  - {fileID: -1349026511, guid: ba8dcc840b38f654181c8ed01ce52d3b, type: 3}
+  - {fileID: -274985328, guid: ba8dcc840b38f654181c8ed01ce52d3b, type: 3}
+  - {fileID: -421173300, guid: ba8dcc840b38f654181c8ed01ce52d3b, type: 3}
+  - {fileID: 1000920428, guid: ba8dcc840b38f654181c8ed01ce52d3b, type: 3}
+  - {fileID: -1438677476, guid: ba8dcc840b38f654181c8ed01ce52d3b, type: 3}
+  - {fileID: 1651142649, guid: ba8dcc840b38f654181c8ed01ce52d3b, type: 3}
+  - {fileID: -1791063769, guid: ba8dcc840b38f654181c8ed01ce52d3b, type: 3}
+  walkRight:
+  - {fileID: 492228454, guid: 3cab0ee321433db439955a2cecfc90d9, type: 3}
+  - {fileID: 1652520301, guid: 3cab0ee321433db439955a2cecfc90d9, type: 3}
+  - {fileID: -642840717, guid: 3cab0ee321433db439955a2cecfc90d9, type: 3}
+  - {fileID: 755040382, guid: 3cab0ee321433db439955a2cecfc90d9, type: 3}
+  - {fileID: 1963908778, guid: 3cab0ee321433db439955a2cecfc90d9, type: 3}
+  - {fileID: 1679626074, guid: 3cab0ee321433db439955a2cecfc90d9, type: 3}
+  - {fileID: -1169419283, guid: 3cab0ee321433db439955a2cecfc90d9, type: 3}
+  - {fileID: 335358405, guid: 3cab0ee321433db439955a2cecfc90d9, type: 3}
+  walkUp:
+  - {fileID: 1324022437, guid: 67ca3bc9d33093840ae6c08e152bd4c5, type: 3}
+  - {fileID: 1756268444, guid: 67ca3bc9d33093840ae6c08e152bd4c5, type: 3}
+  - {fileID: -506298697, guid: 67ca3bc9d33093840ae6c08e152bd4c5, type: 3}
+  - {fileID: -1250264974, guid: 67ca3bc9d33093840ae6c08e152bd4c5, type: 3}
+  - {fileID: -882683940, guid: 67ca3bc9d33093840ae6c08e152bd4c5, type: 3}
+  - {fileID: -1886774128, guid: 67ca3bc9d33093840ae6c08e152bd4c5, type: 3}
+  - {fileID: -255032365, guid: 67ca3bc9d33093840ae6c08e152bd4c5, type: 3}
+  - {fileID: 1420789808, guid: 67ca3bc9d33093840ae6c08e152bd4c5, type: 3}
+  walkDown:
+  - {fileID: 1239662280, guid: d0edb588113087f49bcfdd8720e6cabd, type: 3}
+  - {fileID: 117096138, guid: d0edb588113087f49bcfdd8720e6cabd, type: 3}
+  - {fileID: 1089615888, guid: d0edb588113087f49bcfdd8720e6cabd, type: 3}
+  - {fileID: -1174729249, guid: d0edb588113087f49bcfdd8720e6cabd, type: 3}
+  - {fileID: -864192571, guid: d0edb588113087f49bcfdd8720e6cabd, type: 3}
+  - {fileID: -575789213, guid: d0edb588113087f49bcfdd8720e6cabd, type: 3}
+  - {fileID: -1627725636, guid: d0edb588113087f49bcfdd8720e6cabd, type: 3}
+  - {fileID: 123835570, guid: d0edb588113087f49bcfdd8720e6cabd, type: 3}
   walkSpeed: 2.5
+  stepSize: 1
 --- !u!61 &2214625714436961679
 BoxCollider2D:
   m_ObjectHideFlags: 0
