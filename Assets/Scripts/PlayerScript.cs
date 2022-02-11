@@ -9,6 +9,17 @@ public class PlayerScript : MonoBehaviour
     {
     }
 
+    /*
+     * 
+     */
+    public Sprite[] walkLeft;
+    public Sprite[] walkRight;
+    public Sprite[] walkUp;
+    public Sprite[] walkDown;
+
+    protected SpriteRenderer renderer;
+    protected Sprite[] spriteSheet;
+    protected int spriteIndex;
 
     /*
      *  Movement
