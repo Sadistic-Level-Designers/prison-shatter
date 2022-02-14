@@ -4235,6 +4235,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6984971553517939783, guid: 50d99e62ac2b0a246b624438c6543d99,
+        type: 3}
+      propertyPath: text
+      value: This way! Trust me!
+      objectReference: {fileID: 0}
     - target: {fileID: 8247061436966218702, guid: 50d99e62ac2b0a246b624438c6543d99,
         type: 3}
       propertyPath: m_Name
@@ -4248,17 +4253,17 @@ PrefabInstance:
     - target: {fileID: 8247061436966218737, guid: 50d99e62ac2b0a246b624438c6543d99,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.25
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 8247061436966218737, guid: 50d99e62ac2b0a246b624438c6543d99,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6
+      value: 2.75
       objectReference: {fileID: 0}
     - target: {fileID: 8247061436966218737, guid: 50d99e62ac2b0a246b624438c6543d99,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1
+      value: -0.25
       objectReference: {fileID: 0}
     - target: {fileID: 8247061436966218737, guid: 50d99e62ac2b0a246b624438c6543d99,
         type: 3}
