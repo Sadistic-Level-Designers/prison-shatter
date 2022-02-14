@@ -4,9 +4,18 @@ using UnityEngine;
 
 public class PlayerScript : MonoBehaviour
 {
+    public static PlayerScript i;
+
     // Start is called before the first frame update
     void Start()
     {
+        if(!i) {
+            i = this;
+        } else {
+            throw new System.Exception("Singleton override");
+        }
+
+        renderer = transform.Find("Sprite").GetComponent<SpriteRenderer>();
     }
 
     /*
@@ -55,8 +64,8 @@ public class PlayerScript : MonoBehaviour
     }
 
     protected void UpdateSprites(Vector2 mov) {
-                if(mov.y > 0) spriteSheet = walkUp;
-        else    if(mov.y < 0) spriteSheet = walkDown;
+                /* if(mov.y > 0) */ spriteSheet = walkUp;
+                if(mov.y < 0) spriteSheet = walkDown;
         else    if(mov.x > 0) spriteSheet = walkRight;
         else    if(mov.x < 0) spriteSheet = walkLeft;
 
