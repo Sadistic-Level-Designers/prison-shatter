@@ -779,7 +779,7 @@ GameObject:
   - component: {fileID: 542666973075584533}
   - component: {fileID: 1796452640}
   - component: {fileID: 1796452639}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BreakableTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -801,6 +801,7 @@ Transform:
   - {fileID: 542666973579645509}
   - {fileID: 542666972642318344}
   - {fileID: 542666974170156416}
+  - {fileID: 6381008467928310498}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -851,6 +852,7 @@ MonoBehaviour:
   tile: {fileID: 0}
   crack: {fileID: 0}
   debris: {fileID: 0}
+  death: {fileID: 0}
   crackCounter: 0
 --- !u!1 &542666973172900834
 GameObject:
@@ -3385,3 +3387,83 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1001 &3019911365015078043
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 542666973075584533}
+    m_Modifications:
+    - target: {fileID: 8170941524281124473, guid: e6b8097dd57f14ac9b9e7976462edd8e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8170941524281124473, guid: e6b8097dd57f14ac9b9e7976462edd8e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8170941524281124473, guid: e6b8097dd57f14ac9b9e7976462edd8e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8170941524281124473, guid: e6b8097dd57f14ac9b9e7976462edd8e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8170941524281124473, guid: e6b8097dd57f14ac9b9e7976462edd8e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8170941524281124473, guid: e6b8097dd57f14ac9b9e7976462edd8e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8170941524281124473, guid: e6b8097dd57f14ac9b9e7976462edd8e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8170941524281124473, guid: e6b8097dd57f14ac9b9e7976462edd8e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8170941524281124473, guid: e6b8097dd57f14ac9b9e7976462edd8e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8170941524281124473, guid: e6b8097dd57f14ac9b9e7976462edd8e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8170941524281124473, guid: e6b8097dd57f14ac9b9e7976462edd8e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8170941524281124479, guid: e6b8097dd57f14ac9b9e7976462edd8e,
+        type: 3}
+      propertyPath: m_Name
+      value: DeathTile
+      objectReference: {fileID: 0}
+    - target: {fileID: 8170941524281124479, guid: e6b8097dd57f14ac9b9e7976462edd8e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e6b8097dd57f14ac9b9e7976462edd8e, type: 3}
+--- !u!4 &6381008467928310498 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8170941524281124473, guid: e6b8097dd57f14ac9b9e7976462edd8e,
+    type: 3}
+  m_PrefabInstance: {fileID: 3019911365015078043}
+  m_PrefabAsset: {fileID: 0}

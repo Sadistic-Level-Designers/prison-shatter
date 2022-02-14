@@ -48,8 +48,15 @@ public class PlayerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        movement = GetMovement().normalized;
-        UpdateSprites(movement);
+        if(!isJumping) {
+            movement = GetMovement().normalized;
+            UpdateSprites(movement);
+        }
+
+        bool pressed = Input.GetKeyDown(KeyCode.A);
+        if(!isJumping && pressed) {
+            StartCoroutine( Jump(movement) );
+        }
     }
 
     void FixedUpdate() {
@@ -83,5 +90,65 @@ public class PlayerScript : MonoBehaviour
         }
 
         this.renderer.sprite = spriteSheet[Mathf.FloorToInt(spriteIndex)];
+    }
+
+    [Header("Jumping")]
+    public float jumpDuration = 1f;
+    public float jumpHeight = 4f;
+    public bool isJumping = false;
+
+    private static Vector2 HALF = new Vector2(0.5f, 0.5f);
+
+    protected IEnumerator Jump(Vector2 mov) {
+        float height = -renderer.gameObject.transform.localPosition.z;
+
+        float jumpCounter = 0f;
+        float jumpStart = height;
+        float jumpEnd = jumpStart;
+
+        Vector3 playerStart = transform.position;
+        Vector3 playerEnd = mov.sqrMagnitude > 0f ? new Vector3(Mathf.RoundToInt(playerStart.x + mov.x * 2f), Mathf.RoundToInt(playerStart.y + mov.y * 2f), 0) : playerStart;
+        Vector3 spriteStart = renderer.transform.localPosition;
+
+        // raycast to check for walls
+        Debug.DrawLine((Vector2)playerStart + HALF, (Vector2)playerEnd + HALF, Color.red, 0.5f, false);
+        Vector2 walkDirection = playerEnd - playerStart;
+        RaycastHit2D hit = Physics2D.Raycast((Vector2)playerStart + HALF, walkDirection.normalized, walkDirection.magnitude, LayerMask.GetMask("Default"));
+        Debug.Log(hit.collider.gameObject.name);
+
+        if(!!hit && !!hit.collider && !!hit.collider.gameObject && hit.collider.gameObject.tag != "DeathTile") {
+            playerEnd = (Vector2)playerStart + (hit.point - (Vector2)playerStart) / 2;
+        }
+        // yield return null;
+
+        // start jump
+        isJumping = true;
+        GetComponent<Rigidbody2D>().isKinematic = true;
+
+        while(jumpCounter < 1f) {
+            yield return new WaitForEndOfFrame();
+            jumpCounter += Time.deltaTime / jumpDuration;
+
+            height = Mathf.Lerp(jumpStart, jumpEnd, jumpCounter) + Mathf.Sin(jumpCounter * Mathf.PI) * jumpHeight;
+
+            
+            transform.position = Vector3.Lerp(playerStart, playerEnd, jumpCounter);
+            renderer.transform.localPosition = new Vector3(spriteStart.x, spriteStart.y, -height);
+
+        }
+
+        // end jump
+
+        transform.position = playerEnd;
+        renderer.transform.localPosition = new Vector3(spriteStart.x, spriteStart.y, -jumpEnd);
+        isJumping = false;
+        GetComponent<Rigidbody2D>().isKinematic = false;
+    }
+
+    
+
+    public IEnumerator FallToDeath() {
+        Application.LoadLevel(Application.loadedLevel);
+        yield return null;
     }
 }
