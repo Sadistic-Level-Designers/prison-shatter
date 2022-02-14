@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerScript : MonoBehaviour
 {
     public static PlayerScript i;
+    public static bool isHurt;
 
     // Start is called before the first frame update
     void Start()
@@ -73,6 +74,22 @@ public class PlayerScript : MonoBehaviour
 
         mov.x = (l && r ? 0 : (l ? -1 : (r ? 1 : 0)));
         mov.y = (d && u ? 0 : (d ? -1 : (u ? 1 : 0)));
+
+        // hurt logic
+        if(PlayerScript.isHurt) {
+            renderer.transform.Find("Blood").gameObject.SetActive(true);
+            int hurtCounter = Mathf.RoundToInt(Time.time * 6f) % 4;
+            // Debug.Log("Hurt! " + hurtCounter);
+            switch(hurtCounter) {
+                case 0:
+                case 1:
+                case 2:
+                    return Vector2.zero;
+
+                case 3:
+                    return mov;
+            }
+        }
 
         return mov;
     }

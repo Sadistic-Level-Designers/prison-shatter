@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CollisionTrigger : TriggerBehaviour
 {
-    public Collider triggeredBy;
+    public Collider2D triggeredBy;
 
     void OnTriggerEnter2D(Collider2D other) {
         if(!gameObject.activeSelf) return;
