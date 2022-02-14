@@ -764,6 +764,56 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2214625714436961678, guid: f8999b3ffd5b3471cb53b345c2ef5619,
+        type: 3}
+      propertyPath: death
+      value: 
+      objectReference: {fileID: 1118591477, guid: d194ac3d4f73d51469ce0510d1814afc,
+        type: 3}
+    - target: {fileID: 2214625714436961678, guid: f8999b3ffd5b3471cb53b345c2ef5619,
+        type: 3}
+      propertyPath: jumpUp.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2214625714436961678, guid: f8999b3ffd5b3471cb53b345c2ef5619,
+        type: 3}
+      propertyPath: jumpDown.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2214625714436961678, guid: f8999b3ffd5b3471cb53b345c2ef5619,
+        type: 3}
+      propertyPath: jumpLeft.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2214625714436961678, guid: f8999b3ffd5b3471cb53b345c2ef5619,
+        type: 3}
+      propertyPath: jumpRight.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2214625714436961678, guid: f8999b3ffd5b3471cb53b345c2ef5619,
+        type: 3}
+      propertyPath: jumpUp.Array.data[0]
+      value: 
+      objectReference: {fileID: 447857086, guid: 6cb5572e18b591648a5690d9218cfd36,
+        type: 3}
+    - target: {fileID: 2214625714436961678, guid: f8999b3ffd5b3471cb53b345c2ef5619,
+        type: 3}
+      propertyPath: jumpDown.Array.data[0]
+      value: 
+      objectReference: {fileID: 1084027382, guid: 62b6b579a1a80be419992ade41d20bd9,
+        type: 3}
+    - target: {fileID: 2214625714436961678, guid: f8999b3ffd5b3471cb53b345c2ef5619,
+        type: 3}
+      propertyPath: jumpLeft.Array.data[0]
+      value: 
+      objectReference: {fileID: 930256684, guid: d930a98054b1d1a47b2d1edcbcdaead6,
+        type: 3}
+    - target: {fileID: 2214625714436961678, guid: f8999b3ffd5b3471cb53b345c2ef5619,
+        type: 3}
+      propertyPath: jumpRight.Array.data[0]
+      value: 
+      objectReference: {fileID: 2030282318, guid: 977ff4c83807e7e4088615507648a22a,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f8999b3ffd5b3471cb53b345c2ef5619, type: 3}
 --- !u!1001 &6369758987930323561
