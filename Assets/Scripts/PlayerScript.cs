@@ -21,11 +21,18 @@ public class PlayerScript : MonoBehaviour
     /*
      * Sprites
      */
+    [Header("Sprites")]
     public Sprite[] walkLeft;
     public Sprite[] walkRight;
     public Sprite[] walkUp;
     public Sprite[] walkDown;
+    public Sprite[] jumpLeft;
+    public Sprite[] jumpRight;
+    public Sprite[] jumpUp;
+    public Sprite[] jumpDown;
+    public Sprite death;
 
+    [Header("Rendering")]
     public SpriteRenderer renderer;
     protected Sprite[] spriteSheet;
     public float spriteIndex;
@@ -33,8 +40,8 @@ public class PlayerScript : MonoBehaviour
     /*
      *  Movement
      */
+    [Header("Movement")]
     public float walkSpeed;
-    public float stepSize = 1f;
     Vector2 movement;
 
 
