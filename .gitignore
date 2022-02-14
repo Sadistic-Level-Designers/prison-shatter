@@ -60,3 +60,7 @@ crashlytics-build.properties
 
 
 UserSettings/
+
+.DS_Store
+
+mono_crash.0.0.json
