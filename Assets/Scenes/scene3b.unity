@@ -502,7 +502,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &616712619
 Transform:
   m_ObjectHideFlags: 0
@@ -694,6 +694,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1125425263, guid: 50d99e62ac2b0a246b624438c6543d99, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6984971553517939783, guid: 50d99e62ac2b0a246b624438c6543d99,
+        type: 3}
+      propertyPath: text
+      value: We need to pull the lever to get that door open! Quick! Smash your body
+        through the glass so we can get to it! There is no other way!
+      objectReference: {fileID: 0}
     - target: {fileID: 8247061436966218702, guid: 50d99e62ac2b0a246b624438c6543d99,
         type: 3}
       propertyPath: m_Name
@@ -707,17 +717,17 @@ PrefabInstance:
     - target: {fileID: 8247061436966218737, guid: 50d99e62ac2b0a246b624438c6543d99,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.2
+      value: -3.7
       objectReference: {fileID: 0}
     - target: {fileID: 8247061436966218737, guid: 50d99e62ac2b0a246b624438c6543d99,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.97
+      value: 1.4699998
       objectReference: {fileID: 0}
     - target: {fileID: 8247061436966218737, guid: 50d99e62ac2b0a246b624438c6543d99,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.65
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 8247061436966218737, guid: 50d99e62ac2b0a246b624438c6543d99,
         type: 3}
