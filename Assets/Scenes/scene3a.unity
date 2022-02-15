@@ -476,13 +476,13 @@ PrefabInstance:
     - target: {fileID: 7291317048917224030, guid: d68ae9dc0d54347c985cb8a3243a2739,
         type: 3}
       propertyPath: targetScene.scenePath
-      value: Assets/Scenes/scene4b.unity
+      value: Assets/Scenes/scene4a.unity
       objectReference: {fileID: 0}
     - target: {fileID: 7291317048917224030, guid: d68ae9dc0d54347c985cb8a3243a2739,
         type: 3}
       propertyPath: targetScene.sceneAsset
       value: 
-      objectReference: {fileID: 102900000, guid: b881233a9496f4d75af6bb1045b30eac,
+      objectReference: {fileID: 102900000, guid: edcf30f7d822f4a48b2092df4d8cd56f,
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d68ae9dc0d54347c985cb8a3243a2739, type: 3}
