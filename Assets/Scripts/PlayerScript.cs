@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerScript : MonoBehaviour
 {
@@ -17,6 +18,11 @@ public class PlayerScript : MonoBehaviour
         }
 
         renderer = transform.Find("Sprite").GetComponent<SpriteRenderer>();
+
+         if(SceneManager.GetActiveScene().name == "scene1") {
+             isHurt = false;
+             renderer.transform.Find("Blood").gameObject.SetActive(false);
+         }
     }
 
     /*
@@ -165,7 +171,24 @@ public class PlayerScript : MonoBehaviour
     
 
     public IEnumerator FallToDeath() {
-        Application.LoadLevel(Application.loadedLevel);
+        float time = 3f;
+        this.enabled = false;
+        renderer.sprite = death;
+
+        while(time > 0f) {
+            transform.position += new Vector3(0,0, 0.125f) * Time.deltaTime;
+
+            time -= Time.deltaTime;
+            yield return new WaitForEndOfFrame();
+        }
+        
+        if(SceneManager.GetActiveScene().name == "scene4b") {
+            SceneManager.LoadScene( "scene4a" );
+        } else {
+            SceneManager.LoadScene( "scene1" );
+        }
+
+
         yield return null;
     }
 }
