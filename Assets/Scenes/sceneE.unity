@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731689, g: 0.13414702, b: 0.1210784, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -123,6 +123,89 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &481343676
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 822805572, guid: 50d99e62ac2b0a246b624438c6543d99, type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6984971553517939783, guid: 50d99e62ac2b0a246b624438c6543d99,
+        type: 3}
+      propertyPath: text
+      value: Congratulations, you won!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6984971553517939783, guid: 50d99e62ac2b0a246b624438c6543d99,
+        type: 3}
+      propertyPath: closeKey
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8247061436966218702, guid: 50d99e62ac2b0a246b624438c6543d99,
+        type: 3}
+      propertyPath: m_Name
+      value: Figment
+      objectReference: {fileID: 0}
+    - target: {fileID: 8247061436966218737, guid: 50d99e62ac2b0a246b624438c6543d99,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8247061436966218737, guid: 50d99e62ac2b0a246b624438c6543d99,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 8247061436966218737, guid: 50d99e62ac2b0a246b624438c6543d99,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 8247061436966218737, guid: 50d99e62ac2b0a246b624438c6543d99,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.6748104
+      objectReference: {fileID: 0}
+    - target: {fileID: 8247061436966218737, guid: 50d99e62ac2b0a246b624438c6543d99,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8247061436966218737, guid: 50d99e62ac2b0a246b624438c6543d99,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8247061436966218737, guid: 50d99e62ac2b0a246b624438c6543d99,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8247061436966218737, guid: 50d99e62ac2b0a246b624438c6543d99,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8247061436966218737, guid: 50d99e62ac2b0a246b624438c6543d99,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8247061436966218737, guid: 50d99e62ac2b0a246b624438c6543d99,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8247061436966218737, guid: 50d99e62ac2b0a246b624438c6543d99,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 50d99e62ac2b0a246b624438c6543d99, type: 3}
 --- !u!1 &625580945
 GameObject:
   m_ObjectHideFlags: 0
@@ -240,6 +323,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 328117167048849153, guid: 625041fcfe4ed419699997d7863fc916,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2590163718722224113, guid: 625041fcfe4ed419699997d7863fc916,
         type: 3}
       propertyPath: m_Name
@@ -334,6 +422,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 6369758989123282839, guid: 625041fcfe4ed419699997d7863fc916,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 6369758989123282839, guid: 625041fcfe4ed419699997d7863fc916,
+        type: 3}
+      propertyPath: m_BounceIntensity
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6385863916572535781, guid: 625041fcfe4ed419699997d7863fc916,
         type: 3}
