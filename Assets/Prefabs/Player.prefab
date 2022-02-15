@@ -267,11 +267,15 @@ MonoBehaviour:
   - {fileID: -575789213, guid: d0edb588113087f49bcfdd8720e6cabd, type: 3}
   - {fileID: -1627725636, guid: d0edb588113087f49bcfdd8720e6cabd, type: 3}
   - {fileID: 123835570, guid: d0edb588113087f49bcfdd8720e6cabd, type: 3}
-  jumpLeft: []
-  jumpRight: []
-  jumpUp: []
-  jumpDown: []
-  death: {fileID: 0}
+  jumpLeft:
+  - {fileID: 930256684, guid: d930a98054b1d1a47b2d1edcbcdaead6, type: 3}
+  jumpRight:
+  - {fileID: 2030282318, guid: 977ff4c83807e7e4088615507648a22a, type: 3}
+  jumpUp:
+  - {fileID: 447857086, guid: 6cb5572e18b591648a5690d9218cfd36, type: 3}
+  jumpDown:
+  - {fileID: 1084027382, guid: 62b6b579a1a80be419992ade41d20bd9, type: 3}
+  death: {fileID: 1118591477, guid: d194ac3d4f73d51469ce0510d1814afc, type: 3}
   renderer: {fileID: 176208712}
   spriteIndex: 0
   walkSpeed: 3.5
