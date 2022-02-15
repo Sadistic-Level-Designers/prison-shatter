@@ -220,6 +220,7 @@ GameObject:
   - component: {fileID: 533872823}
   - component: {fileID: 533872822}
   - component: {fileID: 533872821}
+  - component: {fileID: 533872824}
   m_Layer: 0
   m_Name: Fire
   m_TagString: Untagged
@@ -324,6 +325,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &533872824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 533872820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bae4df6c3098453988bf97cf1655fd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wiggleDistance: 0.2
+  wiggleSpeed: 5
 --- !u!1001 &558588565
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -419,6 +434,7 @@ GameObject:
   - component: {fileID: 790603565}
   - component: {fileID: 790603564}
   - component: {fileID: 790603563}
+  - component: {fileID: 790603566}
   m_Layer: 0
   m_Name: Fire (1)
   m_TagString: Untagged
@@ -523,6 +539,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &790603566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 790603562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bae4df6c3098453988bf97cf1655fd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wiggleDistance: 0.2
+  wiggleSpeed: 5
 --- !u!1 &905154684
 GameObject:
   m_ObjectHideFlags: 0
