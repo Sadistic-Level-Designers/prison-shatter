@@ -901,6 +901,11 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 6984971553517939783, guid: 50d99e62ac2b0a246b624438c6543d99,
+        type: 3}
+      propertyPath: text
+      value: Follow me! We have things to do!
+      objectReference: {fileID: 0}
     - target: {fileID: 8247061436966218702, guid: 50d99e62ac2b0a246b624438c6543d99,
         type: 3}
       propertyPath: m_Name
